@@ -10,7 +10,11 @@
 
 \documentclass[a4paper]{jarticle}
 %% 引用にnatbib.sty を使う．
- \usepackage{natbib}
+%% https://www.okomeda.net/wp/504/
+%% 参考文献パートでは以下の通り
+%% \bibliographystyle{junsrt}
+%% \bibliography{bib}
+\usepackage[square]{natbib}
  %%% 本大会論文集固有のパラメータ，定義を読み込み．
   \usepackage{vrsjj}
 %%% 図貼り付け用．必要に応じて，使用環境に適合するよう編集してください．
@@ -239,7 +243,6 @@ No. & Real & Estimated \\ \hline \hline
 
 \cite{koeuranai},\cite{110008001037}
 %%%%%%%{参考文献}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \bibliographystyle{jecon}
 \bibliographystyle{junsrt}
 \bibliography{base}
 % \begin{thebibliography}{9}
